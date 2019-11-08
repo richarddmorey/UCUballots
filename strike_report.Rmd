@@ -324,9 +324,9 @@ all_data %>%
 
 Dividing up the vote into universities and then putting a threshold on that vote artificially inflates the differences between years.
 
-## Pay vs pensions, 2019
+## Both 2019 ballots
 
-Because there were two votes in 2019&mdash;a vote on striking over pensions and a vote on striking over pay and casualization&mdash;we can look at the relationship between these two votes.
+Because there were two votes in 2019&mdash;a vote on striking over pensions and a vote on striking over pay, casualization, inequality, and workload (["four fights"](https://twitter.com/Dr_SteveStanley/status/1192713303270797312)) &mdash;we can look at the relationship between these two votes (I'll call the "four fights" ballot the "pay" ballot for short below, but it contained multiple issues).
 
 
 ```{r}
@@ -461,7 +461,7 @@ all_data %>%
   theme(panel.grid.major = element_blank(), 
         panel.grid.minor = element_blank()) +
   ylab("Turnout (%)") +
-  xlab("Also balloted for pensions?") +
+  xlab("Also ballotted for pensions?") +
   ggtitle("Pay turnout by whether ballotted for pensions") -> p
 
 girafe( ggobj = p, 
@@ -495,7 +495,7 @@ all_data %>%
   theme(panel.grid.major = element_blank(), 
         panel.grid.minor = element_blank()) +
   ylab("Yes (%)") +
-  xlab("Also balloted for pensions?") +
+  xlab("Also ballotted for pensions?") +
   ggtitle("Pay ballot vote by whether ballotted for pensions") -> p
 
 girafe( ggobj = p, 
